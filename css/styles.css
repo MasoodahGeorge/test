@@ -1,0 +1,493 @@
+body {
+    background-color: rgb(248, 227, 231);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* NAV SECTION */
+.cart {
+    width: 5%;
+    height: 5%;
+}
+
+.d-inline-block {
+    width: 15%;
+    height: 15%;
+}
+
+#nv {
+    background-color: #F8E3E7;
+    height: 50%;
+    border-bottom: #333;
+}
+
+
+/* HOME */
+.bow-tique-logo {
+    width: 25%;
+}
+
+/* 
+https://i.postimg.cc/YCm8TmgH/Welcome-to-1.png
+https://i.postimg.cc/L8wxhsHT/Whats-App-Image-2024-06-13-at-09-49-07-f3a22eba.jpg
+https://i.postimg.cc/PqD2DkJk/Whats-App-Image-2024-06-13-at-09-49-07-7ff5ccdb.jpg */
+
+.home-carosel {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#home-welcome {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 5px;
+}
+
+#home-coloumns {
+    width: 100%;
+    background-color: rgb(255, 173, 187);
+    color: white;
+}
+
+.home-img {
+    width: 30%;
+}
+
+.grid-img {
+    width: 100%;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.grid-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.view-more {
+    color: pink;
+    padding: 5% 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    border-radius: 5rem;
+}
+
+/* ABOUT */
+#abt-body {
+    background-image: url('https://i.postimg.cc/dV82rhfQ/Untitled-design-6.png');
+}
+
+main.about-page {
+    max-width: 80%;
+    margin: 5% auto;
+    padding: 2.5%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#about-h1 {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.about-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #ff69b4;
+    border-bottom: 2px solid #ff69b4;
+}
+
+.about-section p {
+    color: #333;
+    line-height: 1.8;
+}
+
+/* PRODUCTS */
+
+#search-div {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+#searchInput,
+#categoryFilter,
+#searchButton {
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchButton {
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: rgb(255, 160, 176);
+}
+
+#product-cards {
+    background-image: url('');
+    padding-bottom: 5%;
+
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    padding: 5%;
+}
+
+.product-card {
+    padding: 5%;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.37);
+    /* Pink background with 1% opacity */
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    max-width: 50%;
+    height: auto;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card button {
+    margin: 5%;
+    color: white;
+    background-color: rgb(224, 123, 140);
+    border: none;
+    border-radius: 5px;
+}
+
+.product-card:hover button {
+    background-color: rgb(224, 103, 123);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 2%;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+    max-height: 80%;
+    overflow-y: hidden;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-details {
+    text-align: left;
+}
+
+.modal-details h2 {
+    margin-top: 0;
+}
+
+.modal-details p {
+    margin-bottom: 1%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    /* Ensure images resize proportionally */
+    max-height: 300px;
+    /* Limit image height if necessary */
+    object-fit: contain;
+}
+/* CONTACT */
+#contact-body{
+    background-image: url('https://i.postimg.cc/dV82rhfQ/Untitled-design-6.png');
+}
+.contact-container {
+    max-width: 70%;
+    margin: auto;
+    background: #fff;
+    padding: 2.5%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    
+}
+
+.contact-header h3 {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.contact-header p {
+    color: #555;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 1%;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 65%;
+}
+
+/* ADMIN */
+#admin-body{
+    background-image: url('https://i.postimg.cc/dV82rhfQ/Untitled-design-6.png');
+}
+.table img {
+    width: 50px;
+}
+.table button{
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+}
+#edit-btn:hover{
+    background-color: pink;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px;
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* CART */
+#cart-body {
+    background-image: url('https://i.postimg.cc/dV82rhfQ/Untitled-design-6.png');
+}
+
+#cart-heading {
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content {
+    padding-top: 10%;
+}
+
+.table-responsive {
+    margin-top: 5%;
+}
+
+.table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 1%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.total-amount {
+    text-align: end;
+}
+
+#checkout-button {
+    background-color: rgb(255, 140, 159);
+    border: none;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(255, 173, 187);
+    color: #fff;
+    padding: 1% 0;
+}
+.footer {
+    background-color: rgb(255, 173, 187);
+    color: #fff;
+    padding: 1% 0;
+}
+#footer-products{
+    padding: 0;
+}
+.footer .container {
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-middle ul li a:hover,
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 300px) {
+    .home-carosel {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #home-coloumns h5 {
+        font-size: 50%;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10%;
+        gap: 10%;
+        padding: 10%;
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        /*remove when finished*/
+        padding: 1 0%;
+        text-align: center;
+    }
+
+    .product-card img {
+        max-width: 50%;
+        height: auto;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    .product-card button {
+        margin: 10%;
+    }
+}
+
+main {
+    flex: 1;
+}
+
